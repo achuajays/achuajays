@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    {% load static %}
+    <style>
+        .banner{
+    width: 100%;
+    height:100vh;
+    background-image:  linear-gradient(rgba(0,0,0,0.75) , rgba(0,0,0,0.75) ) , url("{% static 'images/download.jpg ' %}");
+    background-size: cover;
+    background-position: center ;
+}
+
+
+
+    </style>
+
+
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="banner">
+            <div class="navbar">
+                <img src="{% static 'images/logo.jpg' %}" alt="" class="logo">
+                <ul>
+                    <li><a href="{% url 'library' %} ">LIBRARY </a></li>
+                    <li><a href="{% url 'reserve' %} ">RESERVATION </a></li>
+                    <li><a href="{% url 'booka' %}">BOOK ENTRY   </a></li>
+                    <li><a href=" {% url 'res' %}">BOOK TAKING </a></li>
+                    <li><a href=" {% url  'takenbook' %} ">TAKEN BOOKS </a></li>
+                    <li><a href=" {% url  'csvv' %} ">CSV DATA</a></li>
+                    <li><a href=" {% url  'login' %} ">{{ form }} </a></li>
+                    
+                </ul>
+            </div>
+            <div class="content">
+                <h1> Library </h1>
+                <p> welcome to the world of knoledge </p>
+                <a href="{% url 'info' %}"> <button><span></span>INFO</button></a>
+                <a href="{% url 'vam' %}"><button><span></span>VISSION AND MISSION </button></a>
+            </div>
+    </div>
+</body>
+</html>
+

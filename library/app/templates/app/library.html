@@ -1,0 +1,55 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+ 
+<div class="container">
+    <div class="row m-4">
+
+        <div class="col-sm-3">
+            <h1 class="text-center alert alert-danger  ">LIBRARY BOOKS</h1>
+        </div>
+
+<div class="col-sm-2">
+
+</div>
+
+
+
+       
+            <div class="col-sm-5">
+                <!-- <form action="" method="post">
+        
+                    {% csrf_token %}
+                <input type="text" name="s" id=""><input type="submit" value="SEARCH" class="btm btn-success">
+            </form> -->
+            </div>
+        
+        
+        <div class="col-sm-1">
+            <a href="{% url 'index' %}" class="btn btn-danger ">INDEX</a>
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        
+        {% for s in form %}
+        
+        <div class="card m-4 p-2 c">
+            <img src="{% static 'images/book.jpg' %}" alt="" class="card-img-top" height="100px">
+            <h4 class="text-center">Book Name - {{ s.bn }}</h4>
+            <p class="text-center">Author Name - {{ s.an }}</p>
+            <p class="text-center"> Shelf Number - {{ s.sn }}</p>
+            <form action="{% url 'bookadd' s.bi %}" method="post">
+        
+                {% csrf_token %}
+            <input type="text" name="s" id="" required placeholder="student id"><br>
+            <input type="text" name="e" id="" required placeholder="email">
+            <input type="submit" value="BOOK" class="btn btn-primary">
+        </form>
+            
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

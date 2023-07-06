@@ -1,0 +1,35 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+ 
+<div class="container">
+    <div class="row m-4">
+        <div class="col-sm-1">
+
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                
+                <img src="{% static 'images/download.jpg' %}" alt="" class="card-img-top" height="200px">
+                <h2 class="text-center alert alert-danger">VISSION</h2>
+                <p class="text-center alert alert-success">To be a centre of excellence in technical education which stands to bring forth creative and responsible engineers, committed to the sustainable development of society</p>
+
+                <h2 class="text-center alert alert-danger">MISSION</h2>
+                <p class="text-center alert alert-success">1. To offer quality education by providing a conducive learning ambience that enables students to absorb and practise state-of-the-art technologies.  <br>
+
+
+                    2. To facilitate continuous academia-industry interaction that nurtures creative abilities and entrepreneurial spirit of students.<br>
+                    
+                    3. To encourage design practices embracing sustainability.<br>
+                    
+                    </p>
+                    <a href="{% url 'index' %}" class="btn btn-danger">INDEX</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}

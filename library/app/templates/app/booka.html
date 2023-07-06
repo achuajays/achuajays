@@ -1,0 +1,31 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block content %}
+ 
+<h4 class="text-center text-secondary alert alert-danger m-2">login</h4>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+    
+
+                <div class="card p-5   bg-secondary ">
+                    <h4 class="text-center bg-secondary aleart alert-danger"> {{ key }}</h4>
+        
+
+                    
+                <form action="" method="post">
+                    
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-success" value="submit">SUBMIT</button>
+                    <a href="{% url 'index' %}" class="btn btn-danger">INDEX</a>
+                
+                </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}
