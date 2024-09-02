@@ -1,5 +1,5 @@
 # 💫 About Me:
-I'm currently working IN AOT Technologies<br>I looking to collaborate on Artificial intelligence and Machine learning projects <br>I am looking for help with learning and building new skill and projects 
+I'm currently working IN AOT Technologies
 
 
 ## 🌐 Socials:
