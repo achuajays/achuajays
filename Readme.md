@@ -12,7 +12,7 @@
 ## 🛠️ Core Expertise
 
 ### Generative AI & LLMs
-- **LLM Integration**: GPT-4, Claude, Gemini, OpenAI API
+- **LLM Integration**:  Claude, Gemini, OpenAI API
 - **RAG Pipelines**: Embedding models, document chunking, indexing, retrieval optimization
 - **AI Frameworks**: LangChain, LlamaIndex, Hugging Face Transformers , Crewai ,  Agno 
 - **Agentic Systems**: Multi-agent workflows, tool integration, autonomous reasoning
