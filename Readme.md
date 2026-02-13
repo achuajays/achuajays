@@ -22,7 +22,7 @@
 - **Backend Development**: Python, FastAPI, Django REST Framework, Flask
 - **APIs & Integration**: REST APIs, Webhooks, OAuth2, JWT, Microservices
 - **Cloud Platforms**: Google Cloud (Vertex AI, Cloud Run, Cloud Storage), AWS
-- **Databases**: PostgreSQL, MySQL, MongoDB
+- **Databases**: PostgreSQL, MySQL, MongoDB , CasandraDB , Redis 
 - **Vector Databases**: FAISS, Chroma, Pinecone, OpenSearch
 
 ### MLOps & Optimization
